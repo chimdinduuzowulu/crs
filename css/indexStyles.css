@@ -1,0 +1,136 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+body,html{height: 100vh;width: 100%;}
+body {
+    font: 0.8 em Arial, sans-serif;
+}
+h1, ul {
+ margin: 0;
+ padding: 0;
+}
+#wrap {
+ background: #fff;
+ width:100%;height: auto;
+ display: flex;flex-wrap: wrap;
+}
+/* this is the header container */
+#wrap #header {
+ background-color: maroon;
+ border-bottom: 1px dotted wheat;
+height: auto;
+ flex: 100%;
+ display: flex;justify-content: center;align-items: center;
+}
+#wrap #header >div{margin: 12px;}
+/* this is the logo container */
+#logo{
+ padding: 12px 0px 12px 0px;
+height: 80px;width: 80px;
+ border-radius: 40px;
+ }
+ #logo img{
+ width: 100%;height: 100%;border-radius: 40px;
+ }
+ #wrap #header #Nile h1{color: white;font-weight: lighter;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+/* this is the container of navigation */
+#menu {
+ min-height: 25px;
+ padding-top: 5px;
+ padding-bottom: 10px;
+ background: rgba(238, 197, 145, 1);
+ border-bottom: 1px dotted #000;
+}
+/* this is the navigation part */
+#menu ul{
+ list-style-type: none;
+ padding: 0;
+ margin: 0;
+ }
+#menu ul li{
+  margin-left: 10px;
+  background:rgba(238, 197, 145, 1);
+  float: left;
+}
+#menu ul li a{
+ display: block;
+ padding: 5px 10px;
+ color: #000;
+ text-decoration: none;
+}
+#menu ul li ul li{
+ float: none;
+ }
+#menu ul li ul{
+ position: absolute;
+ display: none;
+ }
+#menu ul li:hover ul{
+ display: block;
+ }
+#main {
+ background: rgba(230, 230, 250, 1);
+ width: 25%;
+ height: auto;
+}
+ #main #side {
+ width: 100%;
+ padding: 4px;
+ height: auto;
+}
+#side table {border: none; border-collapse: collapse;height: 600px;width:inherit;
+}
+#side table tr{
+text-align: center;
+}
+#side table tr >td{
+width: 90%;margin: auto;
+}
+#side h3{display: grid;place-content: center; background-color: maroon;color: white;height: 60px;padding: 13px;}
+
+#side table td:hover{
+background-color: maroon;
+}
+#side table td:hover li > i{color: rgba(230, 230, 250, 1);}
+#side table tr td li a:hover {color: white;}
+#side table td{
+    border: 1px #ED9121 solid;
+    background-color:rgba(238, 197, 145, 1) ;
+    width:15em;border: none; border-collapse: collapse;
+    border-bottom: 1px solid black;
+    padding: 12px;
+    /* background-color: red; */
+}
+td a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+}
+td li{
+    list-style-type: none;
+}
+#side table tr td li > i{color:maroon ;margin: 10px;font-size: 28px;}
+#active{
+    background-color: maroon;
+}
+/* this is the content area part */
+#content {
+ background: rgba(248, 248, 255, 1);
+ float: left;
+ width: 75%;
+ padding: 20px;
+ height: auto;
+ border-right: 1px solid #aaa;
+}
+td li a:hover{color: white;}
+/* ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, */
+#content h1{
+ font-size: 1.6em;
+}
+.clear{
+ clear: both;
+}
+/* this is the footer part */
+#footer{
+ background: rgba(96,123,139, 1);
+ color: #fff;
+ padding: 10px;
+}

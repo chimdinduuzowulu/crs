@@ -1,0 +1,58 @@
+
+*{margin: 0;padding: 0;box-sizing: border-box;}
+body,html{height: 100vh;width: 100%;}
+body{font: 0.8 em Arial, sans-serif;background-image: url("https://www.nileuniversity.edu.ng/wp-content/uploads/slider/cache/82e25eb1f50dc2f625e9444a110f6c23/home_slide_2.jpg");
+background-repeat: no-repeat;background-size: cover;display: grid;flex-direction: column;place-content: center;
+}
+h1, ul {
+ margin: 0;
+ padding: 0;
+}
+/* this is the largest wrapper 
+containing all other container */
+
+/* this is the header container */
+#header {
+ border-top-right-radius: 10px;
+ border-top-left-radius: 10px;
+ background: maroon;;
+ border-bottom: 1px dotted #000;
+ min-height: 50px;
+}
+/* this is the logo container */
+#logo{
+ margin-left: 30px;
+ padding-top: 15px;
+    background-color: maroon;
+ }
+
+/* this is the main wrapper containig the 
+"content" and "side" wrapper */
+
+#content {
+ background: rgba(248, 248, 255, 1);
+ float: left;
+ width: 400px;
+ padding: 20px;
+ min-height: 150px;
+ /*border-right: 1px solid #aaa;*/
+}
+
+#content h1{
+ font-size: 1.6em;
+}
+
+/*this clear class is for special purpose. 
+this is for to clear the "float property" 
+of the previous element, it will prevent 
+footer to float */
+
+.clear{
+ clear: both;
+}
+/* this is the footer part */
+#footer{
+ background: rgba(96,123,139, 1);
+ color: #fff;
+ padding: 10px;
+}
